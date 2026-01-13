@@ -1,0 +1,197 @@
+/* Welcome Banner - Book Cover Design */
+.welcome-banner {
+  background: linear-gradient(135deg, #1d9a6c 0%, #16957d 50%, #138d84 100%);
+  border-radius: 12px;
+  padding: 40px 60px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 10px 40px rgba(249, 247, 247, 0.56),
+    inset 0 0 60px rgba(0, 0, 0, 0.1);
+  border: 3px solid #0d7a5a;
+  border-left: 20px solid #0d6d51;
+}
+
+/* Leather texture overlay */
+.leather-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(41, 40, 40, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 2px,
+      rgba(41, 40, 40, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    );
+  opacity: 0.6;
+}
+
+/* Book spine shadow */
+.book-spine-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 30, 30, 0.4), transparent);
+  z-index: 1;
+}
+
+/* Decorative book pattern */
+.book-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
+  opacity: 0.3;
+}
+
+/* Content wrapper */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Book Icon */
+.book-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 15px rgba(40, 40, 40, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Text wrapper */
+.banner-text {
+  flex: 1 !important;
+  width: 100% !important;
+  max-width: calc(100% - 110px) !important;
+  padding: 0 12px !important;
+}
+
+.banner-title {
+  color: white !important;
+  margin-bottom: 4px !important;
+  font-size: clamp(20px, 4vw, 48px) !important;
+  font-weight: 700 !important;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(126, 217, 87, 0.3) !important;
+  font-family: Georgia, serif !important;
+  line-height: 1.2 !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+.banner-subtitle {
+  font-size: clamp(14px, 2.5vw, 16px) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+  font-family: Georgia, serif !important;
+  line-height: 1.4 !important;
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .banner-text {
+    max-width: calc(100% - 90px) !important;
+    padding: 0 10px !important;
+  }
+
+  .banner-title {
+    font-size: clamp(18px, 3.5vw, 36px) !important;
+    margin-bottom: 3px !important;
+  }
+
+  .banner-subtitle {
+    font-size: clamp(13px, 2.2vw, 15px) !important;
+  }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 768px) {
+  .banner-text {
+    max-width: calc(100% - 70px) !important;
+    padding: 0 8px !important;
+  }
+
+  .banner-title {
+    font-size: clamp(16px, 5vw, 28px) !important;
+    margin-bottom: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .banner-subtitle {
+    font-size: clamp(12px, 3vw, 14px) !important;
+  }
+}
+
+/* Mobile nhỏ (< 480px) */
+@media (max-width: 480px) {
+  .banner-text {
+    max-width: calc(100% - 50px) !important;
+    padding: 0 6px !important;
+  }
+
+  .banner-title {
+    font-size: clamp(14px, 5.5vw, 24px) !important;
+    margin-bottom: 2px;
+  }
+
+  .banner-subtitle {
+    font-size: clamp(11px, 3.5vw, 13px);
+  }
+}
+/* Guest mode styles */
+.guest-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.guest-title {
+  color: #001529;
+}
+
+.guest-warning {
+  color: red;
+  margin-top: 20px;
+  font-size: 16px;
+}
