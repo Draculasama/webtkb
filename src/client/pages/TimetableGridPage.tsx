@@ -125,7 +125,7 @@ export const TimetableGridPage: React.FC = () => {
         {/* ================== CONTROL BAR ================== */}
         <div className="no-print" style={{ padding: '12px 16px', background: '#fff', borderBottom: '1px solid #f0f0f0', display: 'flex', flexWrap: 'wrap', gap: 12 }}>
               <Select defaultValue="2025-2026-1" style={{ width: '100%', maxWidth: 220 }} size="middle">
-                <Option value="2025-2026-1">HK1 2025-2026</Option>
+                <Option value="2025-2026-1">HK2 2026-2027</Option>
               </Select>
               <Select defaultValue="personal" style={{ width: '100%', maxWidth: 180 }} size="middle">
                 <Option value="personal">Lịch cá nhân</Option>
