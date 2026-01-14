@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -9,6 +9,7 @@ import {
 
 // Import router
 import { adminRoutes } from "./router/adminRoutes";
+import { TimetableGridPage } from "./client/pages/TimetableGridPage";
 
 import { Login } from "./modules/auth/components/Login";
 import {
@@ -50,14 +51,11 @@ const AppContent = () => {
   return (
     <Router future={routerFutureConfig}>
       <Routes>
-        <Route path="/" element={<Navigate to="/admin" />} />
-        <Route path="/login" element={<Login />} />
+        {/* Client Routes */}
+          <Route path="/" element={<TimetableGridPage  />} />
+    
+     
 
-        <Route path="/admin" element={<MainLayout />}>
-          <Route element={<PrivateRoute />}>
-            {adminRoutes}
-          </Route>
-        </Route>
 
       </Routes>
     </Router>
