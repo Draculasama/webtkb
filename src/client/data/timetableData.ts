@@ -111,7 +111,7 @@ export const timetableListData: SystemTimeTableItem[] = [
     dayOfWeek: 3,
     startPeriod: 1,
     periodsCount: 6,
-    room: "",
+    room: "_",
     lecturer: "Lương Thị Thu Hường",
     startDate: "26/01/2026",
     endDate: "05/2026",
