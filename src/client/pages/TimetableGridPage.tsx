@@ -223,7 +223,7 @@ export const TimetableGridPage: React.FC = () => {
                     {days.map((day, index) => (
                       <div key={index} className="grid-header-cell" style={{ textAlign: 'center', fontWeight: 'bold', borderRight: '1px solid #eee', color: '#666', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <div>{day.name}</div>
-                        <div style={{ fontWeight: 'normal', color: '#999', fontSize: '0.85em', marginTop: 1 }}>{day.date}</div>
+                   
                       </div>
                     ))}
                 </div>
