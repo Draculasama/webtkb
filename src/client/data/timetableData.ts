@@ -41,7 +41,7 @@ export const timetableGridData: SystemTimeTableItem[] = [
     credits: 2,
     classCode: "",
     dayOfWeek: 4, // Thứ 4
-    startPeriod: 1,
+    startPeriod: 7,
     periodsCount: 6,
     room: "_",
     lecturer: "_",
@@ -58,22 +58,6 @@ export const timetableGridData: SystemTimeTableItem[] = [
     classCode: "",
     dayOfWeek: 6, // Thứ 6
     startPeriod: 1,
-    periodsCount: 6,
-    room: "_",
-    lecturer: "_",
-    startDate: "26/01/2026",
-    endDate: "08/02/2026",
-    color: "#e6f7ff",
-  },
-  {
-    id: "4",
-    courseCode: "IT.002.02",
-    courseName: "Năng lực số",
-    creditClass: "10",
-    credits: 2,
-    classCode: "",
-    dayOfWeek: 2, // Thứ 2
-    startPeriod: 7,
     periodsCount: 6,
     room: "_",
     lecturer: "_",
@@ -129,8 +113,8 @@ export const timetableListData: SystemTimeTableItem[] = [
     periodsCount: 6,
     room: "_",
     lecturer: "_",
-    startDate: "26/01/2026",
-    endDate: "08/02/2026",
+    startDate: "21/01/2026",
+    endDate: "11/02/2026",
     color: "#e6f7ff",
   },
 ];
