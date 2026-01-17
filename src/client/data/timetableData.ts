@@ -6,7 +6,7 @@ export interface SystemTimeTableItem {
   credits: number; // Số tín chỉ
   classCode: string; // Lớp
   dayOfWeek: number; // Thứ (2-8)
-  startPeriod: number; // Tiết bắt đầu
+  startPeriod: number | string; // Tiết bắt đầu
   periodsCount: number; // Số tiết
   room: string; // Phòng
   lecturer: string; // Giảng viên
@@ -42,7 +42,7 @@ export const timetableGridData: SystemTimeTableItem[] = [
     classCode: "",
     dayOfWeek: 4, // Thứ 4
     startPeriod: 7,
-    periodsCount: 6,
+    periodsCount: 7,
     room: "_",
     lecturer: "_",
     startDate: "26/01/2026",
@@ -74,7 +74,7 @@ export const timetableGridData: SystemTimeTableItem[] = [
     classCode: "",
     dayOfWeek: 5, // Thứ 5
     startPeriod: 7,
-    periodsCount:6,
+    periodsCount:7,
     room: "_",
     lecturer: "_",
     startDate: "26/01/2026",
@@ -109,7 +109,7 @@ export const timetableListData: SystemTimeTableItem[] = [
     credits: 2,
     classCode: "_",
     dayOfWeek: 4,
-    startPeriod: 1,
+    startPeriod: '_',
     periodsCount: 6,
     room: "_",
     lecturer: "_",
